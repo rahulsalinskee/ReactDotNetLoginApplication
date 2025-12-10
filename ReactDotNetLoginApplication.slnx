@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="reactdotnetloginapplication.client/reactdotnetloginapplication.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="ReactDotNetLoginApplication.Server/ReactDotNetLoginApplication.Server.csproj" />
+</Solution>
