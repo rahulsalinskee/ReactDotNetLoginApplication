@@ -22,6 +22,11 @@ namespace ReactDotNetLoginApplication.Server
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
+
+                app.UseSwaggerUI(option =>
+                {
+                    option.SwaggerEndpoint(url: "/openapi/v1.json", name: "ReactDotNetLoginApplication v1");
+                });
             }
 
             app.UseHttpsRedirection();
