@@ -5,7 +5,92 @@
     text-align: center;
 }
 
-th, td {
+tr:nth-child(even) {
+    background: #F2F2F2;
+}
+
+tr:nth-child(odd) {
+    background: #FFF;
+}
+
+th,
+td {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.containerbox {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    /* Limits width so it looks like a card */
+    margin: 0 auto;
+    /* Centers the card */
+    color: #333;
+    /* FORCE DARK TEXT so labels are visible */
+    text-align: left;
+}
+
+/* NEW STYLES for Form Layout */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    /* Fixes dark input background */
+    color: #333;
+    font-size: 1rem;
+    box-sizing: border-box;
+    /* Ensures padding doesn't break width */
+}
+
+input:focus {
+    border-color: #646cff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+/* Fix Button Spacing */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Adds space between Login and Register buttons */
+    margin-top: 1.5rem;
+}
+
+button {
+    width: 100%;
+    /* Full width buttons */
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+/* Optional: Make secondary button look different */
+button.secondary {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+button.secondary:hover {
+    border-color: #646cff;
+    color: #646cff;
 }

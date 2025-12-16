@@ -48,7 +48,23 @@ export default defineConfig({
     server: {
         proxy: {
             '^/weatherforecast': {
-                target,
+                target, // ✅ Uses dynamic port (Keep this)
+                secure: false
+            },
+            '^/pingauth': {
+                target, // ✅ Change to 'target' (Was hardcoded 7080)
+                secure: false
+            },
+            '^/register': {
+                target, // ✅ Change to 'target'
+                secure: false
+            },
+            '^/login': {
+                target, // ✅ Change to 'target'
+                secure: false
+            },
+            '^/logout': {
+                target, // ✅ Change to 'target'
                 secure: false
             }
         },
